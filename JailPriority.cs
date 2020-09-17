@@ -513,6 +513,7 @@ namespace ACT_Plugin
                     if (players[i] == players[yourIndex])
                     {
                         ActGlobals.oFormActMain.TTS(order[y]);
+                        ActGlobals.oFormActMain.ParseRawLogLine(false, logInfo.detectedTime, "Titan Gaol: " + order[y]);
                         logsTextBox.Text += "\r\n" + "---[" + (i + 1) + "]---[" + players[i] + "]------>-----" + order[y] + "---<--[YOU]";
                     }
                     else
